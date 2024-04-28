@@ -7,22 +7,29 @@
 
 body{
     margin: 0 100px;
-    background-color: bisque;
+    background-color:rgb(255, 212, 187);
+    background-image: url("");
 }
 
 .contact-grid {
 	display: grid;
 	grid-template-rows: repeat(6, 1fr);
 	grid-template-columns: repeat(6, 1fr);
-	gap: 0;
-	width: 50%;
+	min-width: 800px;
+    max-width: 30%;
 	height: fit-content;
     border: none;
     border-radius: 10px;
     gap: 10px;
     background-color: #ffffff;
-    margin: 0;
+    margin: 10% auto;
+    box-shadow: 5px 7px 19px -7px rgba(0,0,0,0.53);
 
+}
+
+.contact-grid{
+    justify-content: center;
+    justify-tracks: center;
 }
 
  .contact-grid .content {
@@ -60,15 +67,29 @@ label,p,button{
   margin-bottom: 2px;
 }
 
-input,button{
-    padding: 10px;
-}
-
 input,textarea,button{
     width: 100%;
     border-radius: 5px; 
+    border: 2px solid  rgb(63, 23, 0);
+    padding: 10px;
+}
+
+label,h2,p{
+    color:  rgb(63, 23, 0);
+    
+}
+
+label,h2{
+    font-weight: 600;
 }
 
 button{
-    background-color: rgb(3, 0, 63);
+    background-color: rgb(63, 23, 0);
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+textarea:focus, input:focus,button:focus{
+    outline: none;
 }
