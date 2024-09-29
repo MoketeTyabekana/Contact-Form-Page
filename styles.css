@@ -21,7 +21,7 @@ body{
     box-shadow: 5px 7px 19px -7px rgba(0,0,0,0.53);
     justify-content: center;
     align-items: center;
-
+    width: 90%;
 }
 
 
@@ -90,9 +90,32 @@ textarea:focus, input:focus,button:focus{
         
     }
 
-    .contact-grid{
-        display: flex;
-        flex-direction: column-reverse;
+    .contact-grid {
+       display: flex;
+       flex-direction: column-reverse;
+        border: none;
+        border-radius: 10px;
+        gap: 10px;
+        background-color: #ffffff;
+        margin: 10% auto;
+        box-shadow: 5px 7px 19px -7px rgba(0,0,0,0.53);
+        justify-content: center;
+        align-items: center;
+        
+        height: 100%;
+        margin: 5%;
+    }
 
+    .contact-grid .img-asset {
+        background: url('https://images.unsplash.com/photo-1543872084-c7bd3822856f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG93bnxlbnwwfHwwfHx8MA%3D%3D" alt="Telephonen image');
+    
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px 10px 0 0;
+       
     }
 }
