@@ -13,45 +13,35 @@ body{
 
 .contact-grid {
 	display: grid;
-	grid-template-rows: repeat(6, 1fr);
-	grid-template-columns: repeat(6, 1fr);
-	min-width: 800px;
-    max-width: 30%;
-	height: fit-content;
+	grid-template-columns: repeat(2,1fr);
     border: none;
     border-radius: 10px;
     gap: 10px;
     background-color: #ffffff;
     margin: 10% auto;
     box-shadow: 5px 7px 19px -7px rgba(0,0,0,0.53);
-
-}
-
-.contact-grid{
+    
     justify-content: center;
-    justify-tracks: center;
-}
-
- .contact-grid .content {
-	grid-area: 1 / 1 / 7 / 5;
-    margin: 15px;
+    align-items: center;
 
 }
+
 
 .contact-grid .content form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
-
+    gap: 15px;
 }
+
+.form-content{
+    padding: 20px;
+}
+
 
 .contact-grid .img-asset {
-	grid-area: 1 / 5 / 7 / 7;
-	
-}
-
-.contact-grid .img-asset img{
+    background: url('https://images.unsplash.com/photo-1543872084-c7bd3822856f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG93bnxlbnwwfHwwfHx8MA%3D%3D" alt="Telephonen image');
+    
     width: 100%;
     height: 100%;
     object-fit: cover;
